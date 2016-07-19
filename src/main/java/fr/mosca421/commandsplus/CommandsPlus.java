@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import fr.mosca421.commandsplus.blocks.BlockRegistry;
 import fr.mosca421.commandsplus.commands.CommandRegistry;
+import fr.mosca421.commandsplus.event.Eventhandler;
 import fr.mosca421.commandsplus.gui.GuiHandler;
 import fr.mosca421.commandsplus.items.ItemRegistry;
 import fr.mosca421.commandsplus.packet.PacketRegistry;
@@ -52,6 +53,7 @@ public class CommandsPlus
     @EventHandler
     public void preinit(FMLPreInitializationEvent event)
     {
+    	Eventhandler.preInit(event);
 		logger = event.getModLog();
 		BlockRegistry.preInit(event);
 		ItemRegistry.preInit(event);
