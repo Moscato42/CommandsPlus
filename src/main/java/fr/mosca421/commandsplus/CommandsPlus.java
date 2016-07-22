@@ -67,7 +67,7 @@ public class CommandsPlus
 		proxy.init(event);
 		RecipeRegistry.init(event);
 		TileEntityRegistry.init(event);
-		network = NetworkRegistry.INSTANCE.newSimpleChannel("facmod");
+		network = NetworkRegistry.INSTANCE.newSimpleChannel("commandplus");
 		//NetworkRegistry.INSTANCE.registerGuiHandler(CommandsPlus.INSTANCE, new GuiHandler());
 		PacketRegistry.init(event);
     }
